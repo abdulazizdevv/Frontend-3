@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,oDAAI;AACZ,OAAO,CAAC,8DAAI;AACZ,OAAO,CAAC,qFAAI;ACFZ,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,OAAO;CACjB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,AAAA,UAAU,CAAC;IACT,SAAS,EAAE,MAAM;IACjB,MAAM,EAAE,MAAM;IACd,OAAO,EAAE,MAAM;GAChB;;;AKhBH,AAAA,CAAC,CAAA;EACE,WAAW,EAAE,4BAA4B;EACxC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/abstracts/_mixins.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/abstracts/_fonts.scss",
+        "../scss/base/_reset.scss",
+        "../scss/base/_typography.scss",
+        "../scss/components/_buttons.scss",
+        "../scss/components/_carousel.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/layout/_header.scss",
+        "../scss/sections/_hero.scss",
+        "../scss/sections/_about.scss",
+        "../scss/sections/_benefitCard.scss",
+        "../scss/sections/_contact.scss",
+        "../scss/sections/_news.scss",
+        "../scss/sections/_ourProject.scss",
+        "../scss/sections/_service.scss",
+        "../scss/sections/_team.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
