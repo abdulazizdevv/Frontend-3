@@ -1,13 +1,11 @@
 #benefitCard {
-  background-image:
-    url("../../../images/left-gradient.png"),url("../../../images/right-gragient.png"), url("../../../images/main-line.jpg"),;
-//   background-repeat: no-repeat;
-background-size: cover;
-// background-position-y: center;
-  //   background-position: top left, right bottom;
-  //   background-image: ;
-//   background-position: center;
-padding-bottom: 25px;
+  // background-image: url("../../../images/left-gradient.png"),
+  //   url("../../../images/right-gragient.png"),
+  //   url("../../../images/main-line.jpg");
+  background-size: cover;
+  padding-bottom: 25px;
+  background-color: var(--hero);
+
 }
 
 .head-text {
@@ -19,30 +17,29 @@ padding-bottom: 25px;
   padding-top: 70px;
   /* identical to box height */
   text-align: center;
-  color: #000000;
+  color: var(--texts);
 }
 .benefit {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  //   gap: 30px;
   margin-top: 40px;
 }
 .card {
   width: 100%;
   max-width: 433px;
   height: 250px;
-  background: rgba(243, 243, 243, 0.5);
+  background: var(--card-color);
   border: 1px solid #999999;
   backdrop-filter: blur(2.5px);
   border-radius: 20px;
   position: relative;
   &:hover {
     transition: 1s;
-    box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+    box-shadow:var(--card-shadow);
     backdrop-filter: blur(2.5px);
     /* Note: backdrop-filter has minimal browser support */
-    
+
     border-radius: 20px;
   }
 
@@ -67,7 +64,7 @@ padding-bottom: 25px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;
+    color: var(--texts);
     position: absolute;
     left: 25px;
     top: 125px;
@@ -85,10 +82,9 @@ padding-bottom: 25px;
     line-height: 22px;
     /* or 138% */
 
-    color: #000000;
+    color:var(--texts);
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .benefit {

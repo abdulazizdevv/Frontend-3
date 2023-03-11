@@ -1,10 +1,7 @@
 #about {
-  background-image: url(../../../images/gradientShoose.png) ;
-//   margin-top: 94px;
-background-size: cover;
-// background-position-y: center;
   padding-top: 94px;
   padding-bottom: 25px;
+  background: var(--hero);
 }
 
 .all {
@@ -18,7 +15,7 @@ background-size: cover;
     font-weight: 600;
     font-size: 50px;
     line-height: 64px;
-    color: #000000;
+    color: var(--texts);
   }
   &-txt {
     font-family: "Futura PT";
@@ -26,7 +23,7 @@ background-size: cover;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--texts);
     max-width: 569px;
     margin-top: 20px;
   }
@@ -71,7 +68,7 @@ background-size: cover;
       font-size: 20px;
       line-height: 26px;
       text-align: center;
-      color: #000000;
+      color: var(--texts);
     }
   }
 }
@@ -87,9 +84,9 @@ background-size: cover;
   }
 }
 @media screen and (max-width: 1300px) {
- .all{
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
+  .all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,6 +1,7 @@
 #ourProject1 {
   padding-top: 120px;
   padding-bottom: 25px;
+  background-color: var(--main);
 }
 .project-txt {
   font-family: "Proxima Nova", sans-serif;
@@ -8,7 +9,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  color: #000000;
+  color: var(--texts);
   text-align: center;
   margin-bottom: 40px;
 }
@@ -31,7 +32,7 @@
   // padding: 25px;
   padding: 10px;
 
-  background-color: transparent;
+  background-color: var(--card-color);
   width: 166px;
   // height: 19px;
   border: none;
@@ -40,7 +41,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #000;
+  color: var(--texts);
   // position: absolute;
 }
 .tap1 {
@@ -54,7 +55,7 @@
     rgba(105, 17, 173, 0.95) 85.28%
   );
   border-radius: 30px;
-  color: #fff;
+  color: var(--main);
 }
 .project {
   margin-top: 40px;
@@ -70,7 +71,7 @@
 
     &-top {
       position: absolute;
-      background: #ffffff;
+      background: var(--main);
       box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       top: 15px;
@@ -81,7 +82,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
-      color: #000000;
+      color: var(--main);
     }
   }
   .card1 {
@@ -105,7 +106,7 @@
         position: absolute;
         content: "UYMAKON mobil ilovasi";
         font-family: "Proxima Nova", sans-serif;
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }
@@ -144,7 +145,7 @@
         content: "FOOD veb sayt";
         font-family: "Proxima Nova", sans-serif;
 
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }
@@ -183,7 +184,7 @@
         content: "Social Media Marketing";
         font-family: "Proxima Nova", sans-serif;
 
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }
@@ -221,7 +222,7 @@
         position: absolute;
         content: "YANGILIKLAR mobil ilovasi";
         font-family: "Proxima Nova", sans-serif;
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }
@@ -259,7 +260,7 @@
         position: absolute;
         content: "KUN UZ veb sayt";
         font-family: "Proxima Nova", sans-serif;
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }
@@ -297,7 +298,7 @@
         position: absolute;
         content: "Social Media Marketing ";
         font-family: "Proxima Nova", sans-serif;
-        color: #fff;
+        color: var(--main);
         bottom: 30px;
         left: 30px;
       }

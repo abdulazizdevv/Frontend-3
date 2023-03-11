@@ -1,8 +1,7 @@
 #service {
-    background-image: 
-    url(../../../images/main-line.jpg);
+  background: var(--main);
 
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 .service {
@@ -10,7 +9,7 @@
   max-width: 1358px;
   min-height: 788px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--card-color);
   border: 1px solid #999999;
   backdrop-filter: blur(1px);
   border-radius: 20px;
@@ -22,7 +21,7 @@
     font-size: 36px;
     line-height: 44px;
     text-align: center;
-    color: #000000;
+    color: var(--texts);
     margin-top: 40px;
   }
   .all-icons {
@@ -30,7 +29,7 @@
     flex-wrap: wrap;
     gap: 109px;
   }
-  .bottom{
+  .bottom {
     margin-top: 50px;
   }
   .icons {
@@ -45,7 +44,7 @@
       height: 69px;
       background: rgba(84, 84, 212, 0.1);
       border-radius: 50%;
-      img{
+      img {
         padding: 18px;
       }
     }
@@ -54,7 +53,7 @@
       height: 69px;
       background: rgba(240, 64, 55, 0.1);
       border-radius: 50%;
-      img{
+      img {
         padding: 18px;
       }
     }
@@ -63,7 +62,7 @@
       height: 69px;
       background: rgba(254, 220, 90, 0.1);
       border-radius: 50%;
-      img{
+      img {
         padding: 18px;
       }
     }
@@ -75,7 +74,7 @@
     font-size: 28px;
     line-height: 38px;
     letter-spacing: -0.750316px;
-    color: #000000;
+    color: var(--texts);
   }
   .head-p {
     max-width: 299px;
@@ -91,15 +90,15 @@
   }
 }
 
-@media screen and (max-width:600px) {
-  .all-icons{
+@media screen and (max-width: 600px) {
+  .all-icons {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-@media screen and (max-width:1300px) {
-  .all-icons{
+@media screen and (max-width: 1300px) {
+  .all-icons {
     display: flex;
     align-items: center;
     justify-content: center;

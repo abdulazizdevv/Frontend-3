@@ -3,7 +3,9 @@
     padding: 60px 0;
     background-position: center;
     background-size: cover;
-    background-image: url(../../../images/bg_all.jpg);
+background-size: cover;
+background-color: var(--hero);
+
 }
 .team_title{
     height: 44px;
@@ -12,7 +14,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 44px;
-color: #000000;
+color: var(--texts);
 text-align: center;
 margin-bottom: 40px;
 }
@@ -54,7 +56,7 @@ border-radius: 60px;
     left: calc(50% - 145px);
     width: 296px;
 height: 88px;
-background: rgba(255, 255, 255, 0.9);
+background: var(--hero);
 border: 1px solid #999999;
 backdrop-filter: blur(1px);
 border-radius: 20px;
@@ -67,7 +69,7 @@ h5{
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-    color: #000000;
+    color: var(--texts);
     margin-top: 14px;
     
 }
@@ -88,7 +90,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 text-align: center;
-color: rgba(39, 39, 39, 0.8);
+color:var(--texts);
 }
 }
 // teams end

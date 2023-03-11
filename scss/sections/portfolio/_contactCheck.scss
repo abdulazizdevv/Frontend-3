@@ -2,8 +2,9 @@
 
 #contact {
   background-size: cover;
-  background-image: url(../../../images/bg_all.jpg);
   background-position: center;
+  background-color: var(--hero);
+
 }
 .last_bg {
   background-repeat: no-repeat;
@@ -17,7 +18,7 @@
   max-width: 1460px;
   width: 100%;
   min-height: 873px;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--card-color);
   border: 1px solid #999999;
   backdrop-filter: blur(1px);
 
@@ -52,7 +53,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;
+    color: var(--texts);
     text-align: center;
     padding-top: 40px;
   }
@@ -65,7 +66,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
-  color: #000000;
+  color: var(--texts);
 }
 // form start
 .contact_input {
@@ -87,7 +88,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #000000;
+  color: var(--texts);
   margin-top: 40px;
   margin-bottom: 34px;
 }
@@ -99,7 +100,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
+  color: var(--texts);
   display: block;
 }
 .check_box {
@@ -139,7 +140,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;
+    color: var(--texts);
     margin-top: 10px;
     text-align: center;
   }
@@ -235,7 +236,7 @@
     width: 360px;
     min-height: 1425px;
     flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--card-color);
     border: 1px solid #999999;
     backdrop-filter: blur(1px);
 
