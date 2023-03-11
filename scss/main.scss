@@ -11,11 +11,16 @@
 @import "./layout/footer";
 @import "./layout/header";
 
-@import "./sections/hero";
-@import "./sections/about";
-@import "./sections/benefitCard";
-@import "./sections/contact";
-@import "./sections/news";
-@import "./sections/ourProject";
-@import "./sections/service";
-@import "./sections/team";
+@import "./sections/main/hero";
+@import "./sections/main/about";
+@import "./sections/main/benefitCard";
+@import "./sections/main/contact";
+@import "./sections/main/news";
+@import "./sections/main/ourProject";
+@import "./sections/main/service";
+@import "./sections/main/team";
+
+@import "./sections/news/tap";
+
+@import "./sections/portfolio/contactCheck";
+@import "./sections/portfolio/project";
