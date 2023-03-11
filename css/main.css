@@ -59,6 +59,139 @@ li {
   list-style-type: none;
 }
 
+.to-top {
+  position: relative;
+  background-color: black;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  color: blue;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.br {
+  width: 20px;
+  height: 20px;
+  background-color: #d42a2a;
+  border-radius: 90px 10px 90px 5px;
+}
+
+.g {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #2a96d4;
+  border-radius: 5px 90px 5px 90px;
+}
+
+.o {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #2ad463;
+  border-radius: 70px 5px 70px 5px;
+}
+
+.l {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #4f2ad4;
+  border-radius: 5px 70px 5px 70px;
+}
+
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+  content: '';
+  border: 1em solid #111317;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: loader 2s linear infinite;
+          animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader:before {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
 footer {
   background: var(--hero);
   padding: 81px 0;
@@ -1669,7 +1802,7 @@ input {
   right: -75px;
 }
 
-#ourProject {
+#ourProject1 {
   padding-top: 120px;
   padding-bottom: 25px;
 }
@@ -3244,6 +3377,703 @@ input {
     font-size: 16px;
     line-height: 19px;
     gap: 10px;
+  }
+}
+
+#contact {
+  background-size: cover;
+  background-image: url(../../../images/bg_all.jpg);
+  background-position: center;
+}
+
+.last_bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  background-image: url(../../../images/lastBg.png);
+}
+
+.contact_box1 {
+  max-width: 1460px;
+  width: 100%;
+  min-height: 873px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 60px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+.contact_left {
+  width: 60%;
+  height: auto;
+}
+
+.contact_right {
+  width: 40%;
+  height: auto;
+}
+
+.what_likes {
+  width: 487px;
+  min-height: 602px;
+  background: rgba(83, 83, 83, 0.1);
+  -webkit-box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+          box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+
+.what_likes .likes_title {
+  height: 29px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact_title {
+  max-width: 640px;
+  min-height: 117px;
+  font-family: "Proxima Nova";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.contact_input {
+  width: 499px;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.contact_input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.servise_text {
+  max-width: 488px;
+  height: 29px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+
+.checkmark {
+  max-width: 198px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  display: block;
+}
+
+.check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.check_box .check_box-right {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.label_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.simple_card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 66px;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.simple_card {
+  width: 150px;
+}
+
+.simple_card p {
+  width: 141px;
+  height: 29px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.simple_card_top {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.simpleBg1 {
+  background-image: url(../../../images/kofe1.png);
+}
+
+.simpleBg2 {
+  background-image: url(../../../images/kofe2.png);
+}
+
+.simpleBg3 {
+  background-image: url(../../../images/suv1.png);
+}
+
+.simpleBg4 {
+  background-image: url(../../../images/choy1.png);
+}
+
+@media screen and (max-width: 1400px) {
+  .contact_box {
+    gap: 30px;
+  }
+  .contact_box .what_likes {
+    width: 427px;
+    min-height: 602px;
+  }
+  .contact_left {
+    width: 55%;
+    height: auto;
+  }
+  .contact_right {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .contact_box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .contact_box .what_likes {
+    width: 427px;
+    min-height: 602px;
+  }
+  .contact_left {
+    width: 100%;
+    height: auto;
+  }
+  .contact_right {
+    width: 100%;
+    height: auto;
+  }
+  .contact_title {
+    max-width: 640px;
+    min-height: 117px;
+    font-size: 30px;
+  }
+  .what_likes {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .contact_box {
+    padding: 10px 20px;
+  }
+  .check_box {
+    padding-top: 30px;
+    gap: 30px;
+  }
+  .contact_input {
+    width: 95%;
+  }
+  .what_likes {
+    max-width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  .what_likes .likes_title {
+    height: auto;
+    padding-top: 40px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box {
+    width: 360px;
+    min-height: 1425px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #999999;
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    border-radius: 20px;
+  }
+  .likes_title {
+    width: 320px;
+    height: 96px;
+    font-family: "Proxima Nova";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+#ourProject {
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+
+.project-txt {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.taps {
+  width: 664px;
+  height: 55px;
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 90px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.tap {
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  width: 166px;
+  border: none;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+.tap1 {
+  margin-top: 1px;
+  width: 166px;
+  height: 51px;
+  text-align: center;
+  background: linear-gradient(93.5deg, #1e11ad 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.project {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 433px;
+  height: 362px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.project-card-top {
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.project .card1 {
+  background-image: url(../../../images/project1.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card1-hover {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card1-hover .project-card-top {
+  display: none;
+}
+
+.project .card1-hover::after {
+  position: absolute;
+  content: "UYMAKON mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card1:hover {
+  overflow: visible;
+}
+
+.project .card1:hover .card1-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card2 {
+  background: url(../../../images/project2.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card2-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card2-hover .project-card-top {
+  display: none;
+}
+
+.project .card2-hover::after {
+  position: absolute;
+  content: "FOOD veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card2:hover {
+  overflow: visible;
+}
+
+.project .card2:hover .card2-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card3 {
+  background: url(../../../images/project3.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card3-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card3-hover .project-card-top {
+  display: none;
+}
+
+.project .card3-hover::after {
+  position: absolute;
+  content: "Social Media Marketing";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card3:hover {
+  overflow: visible;
+}
+
+.project .card3:hover .card3-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card4 {
+  background: url(../../../images/project4.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card4-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card4-hover .project-card-top {
+  display: none;
+}
+
+.project .card4-hover::after {
+  position: absolute;
+  content: "YANGILIKLAR mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card4:hover {
+  overflow: visible;
+}
+
+.project .card4:hover .card4-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card5 {
+  background: url(../../../images/project5.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card5-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card5-hover .project-card-top {
+  display: none;
+}
+
+.project .card5-hover::after {
+  position: absolute;
+  content: "KUN UZ veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card5:hover {
+  overflow: visible;
+}
+
+.project .card5:hover .card5-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card6 {
+  background: url(../../../images/project6.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card6-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card6-hover .project-card-top {
+  display: none;
+}
+
+.project .card6-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card6:hover {
+  overflow: visible;
+}
+
+.project .card6:hover .card6-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.links {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.links a {
+  color: #6911ad;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .taps {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: c;
+        -ms-flex-pack: c;
+            justify-content: c;
   }
 }
 /*# sourceMappingURL=main.css.map */

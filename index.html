@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
 
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <!-- Header Start -->
     <header class="header">
         <div class="container">
@@ -193,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section id="ourProject">
+        <section id="ourProject1">
             <div class="container">
                 <h2 class="project-txt">Bajargan loyihalarimiz</h2>
                 <div class="taps">
@@ -207,7 +214,9 @@
 
                 </div>
                 <div class="links">
-                    <a href="./portfolio.html" target="_blank">Barchasini ko'rish</a>
+                    <a href="./portfolio.html" class="btn2 rounded">
+                        <span class="text-white">Barchasini ko'rish </span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -397,6 +406,7 @@
                 </div>
             </div>
         </section>
+        <!-- contact section started -->
         <section id="contact">
             <div class="container">
                 <div class="contact_box">
@@ -539,13 +549,15 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="./portfolio.html" class="btn2 rounded">
+                            <span class="text-white">Barchasini ko'rish </span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="last_bg">
-
-            </div>
+            <div class="last_bg"></div>
         </section>
+        <!-- contact section finished -->
     </main>
     <footer>
         <div class="container">
@@ -584,14 +596,70 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="to-top">
+        <div class="br"></div>
+        <div class="g"></div>
+        <div class="o"></div>
+        <div class="l"></div>
+    </a>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./slick-1.8.1/slick/slick.js"></script>
-    <script src="./js//mode.js"></script>
+    <script src="./js/mode.js"></script>
 
     <script src="./js/carousel.js"></script>
+    <script type="module">
+        import createGlobe from 'https://cdn.skypack.dev/cobe'
+      
+      let phi = 0
+      let canvas = document.getElementById("cobe")
+    
+      const globe = createGlobe(canvas, {
+        devicePixelRatio: 2,
+        width: 1000,
+        height: 1000,
+        phi: 0,
+        theta: 0,
+        dark:0.3,
+        diffuse: 1.2,
+        scale: 1,
+        mapSamples: 16000,
+        mapBrightness: 6,
+        baseColor: [1, 1, 1],
+        markerColor: [1, 0.5, 1],
+        glowColor: [1, 1, 1],
+        offset: [0, 0],
+        markers: [
+          { location: [37.7595, -122.4367], size: 0.03 },
+          { location: [40.7128, -74.006], size: 0.1 },
+        ],
+        onRender: (state) => {
+          // Called on every animation frame.
+          // `state` will be an empty object, return updated params.
+          state.phi = phi
+          phi += 0.01
+        },
+      });
+    </script>
+    <script>
+        setTimeout(function () {
+            $(".loader_bg").fadeToggle();
+        }, 1000);
+    </script>
+    <script>
+        var loader = document.querySelector(".loader");
+
+        window.addEventListener("load", vanish);
+
+        function vanish() {
+            loader.classList.add("dissapear");
+        }
+    </script>
+    <script src="./js/header.js"></script>
+    <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
