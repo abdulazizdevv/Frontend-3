@@ -422,7 +422,7 @@ input {
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  color: #ffffff;
+  color: var(--texts);
   padding-bottom: 50px;
 }
 
@@ -589,7 +589,7 @@ input {
 
 @media screen and (max-width: 700px) {
   .header {
-    background: #fff;
+    background: var(--header);
   }
   .header__contact {
     display: none;
@@ -598,7 +598,7 @@ input {
     font-family: "Banana Brick";
     font-weight: 400;
     font-size: 32px;
-    color: #000000;
+    color: var(--texts);
   }
   .dark-light {
     display: block;
