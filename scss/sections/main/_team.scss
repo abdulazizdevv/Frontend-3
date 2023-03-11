@@ -1,0 +1,94 @@
+// teams started
+#team{
+    padding: 60px 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../../images/bg_all.jpg);
+}
+.team_title{
+    height: 44px;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+text-align: center;
+margin-bottom: 40px;
+}
+.team_carousel{
+    // padding: 40px 0;
+    background: transparent;
+    margin-bottom: 100px;
+}
+.team_item{
+    position: relative;
+    height: 380px;
+}
+.team_wrapper{
+    width: 317px;
+height: 326px;
+margin: 0 auto;
+background-position: center;
+background-size: cover;
+border: 1px solid #999999;
+backdrop-filter: blur(1px);
+border-radius: 60px;
+
+}
+.team_bg1,.team_bg5{
+    background: url(../../../images/team1.png);
+}
+.team_bg2{
+    background: url(../../../images/team2.png);
+}
+.team_bg3{
+    background: url(../../../images/team3.png);
+}
+.team_bg4{
+    background: url(../../../images/team4.png);
+}
+.team_bottom{
+    position: absolute;
+    bottom: -44px;
+    left: calc(50% - 145px);
+    width: 296px;
+height: 88px;
+background: rgba(255, 255, 255, 0.9);
+border: 1px solid #999999;
+backdrop-filter: blur(1px);
+border-radius: 20px;
+z-index: 3;
+h5{
+    height: 29px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin-top: 14px;
+    
+}
+span{
+    width: 100px;
+height: 0px;
+margin: 0 auto;
+display: block;
+border: 2px solid #999999;
+margin-bottom: 7px;
+    margin-top: 7px;
+}
+p{
+    height: 19px;
+font-family: 'Proxima Nova';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: rgba(39, 39, 39, 0.8);
+}
+}
+// teams end

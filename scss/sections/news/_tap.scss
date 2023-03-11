@@ -613,3 +613,223 @@
     justify-content: center;
   }
 }
+
+// tap style start
+#news_main{
+    background-position: bottom ;
+    background-image: url(../../../images/newsPageBottom.png);
+}
+.news_page_box{
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.news_main{
+    width: 70%;
+}
+.news_aside{
+    width: 30%;
+}
+
+.news_page_bg{
+    width: 100%;
+height: 757.39px;
+background-image: url(../../../images/newstab1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border-radius: 20px;
+}
+
+.news_aside_card{
+    width: 317px;
+    height: 283px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    margin-bottom: 30px;
+overflow: hidden;
+}
+.news_aside_card-top{
+    width: 100%;
+height: 195px;
+border: 1px solid #999999;
+backdrop-filter: blur(1px);
+border-radius: 20px 20px 0px 1px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.news_card-bg1{
+    background-image: url(../../../images/newstab2.png);
+}
+.news_card-bg2{
+    background-image: url(../../../images/newstab3.png);
+}
+
+.news_card-bg3{
+    background-image: url(../../../images/newstab5.png);
+
+}
+.news_card-bg4{
+    background-image: url(../../../images/newstab6.png);
+}
+.news_aside_card-body{
+    padding:15px 20px  25px 20px ;
+    z-index: -10;
+    h5{
+        max-width: 277px;
+height: auto;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+z-index: -10;
+    }
+}
+
+.new_main_content{
+    padding: 40px 40px 22px 40px;
+    width: 100%;
+min-height: 1710px;
+background: rgba(255, 255, 255, 0.9);
+border: 1px solid #4E4E4E;
+backdrop-filter: blur(1px);
+border-radius: 20px;
+margin-top: 40px;
+}
+.news_page-title{
+    width: 100%;
+height: auto;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+color: #000000;
+margin-bottom: 20px;
+}
+.news_page_pr1{
+    width: 100%;
+height: auto;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0.02em;
+color: #000000;
+margin-bottom: 25px;
+}
+.news_contentBg{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 623px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../../images/itpark.png);  
+}
+
+.news_page_line{
+    width: 100%;
+height: 0px;
+border: 1px solid #989898;
+display: block;
+}
+
+.news_content_bottom{
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.content_bottom1{
+height: 19px;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #999999;
+}
+.content_bottom2 ,.content_bottom3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0;
+    padding: 0;
+    color: #272727;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    img{
+        margin: 0;
+        padding: 0;
+        height: 20px;
+        display: block;
+    }
+    }
+
+    @media screen and(max-width:1296px) {
+        .news_aside_card{
+            width: 90%;
+            height: 283px;
+            margin-bottom: 30px;
+        
+        }
+        .news_aside_card-top{
+            width: 100%;
+        height: 195px;
+        border: 1px solid #999999;
+        backdrop-filter: blur(1px);
+        border-radius: 20px 20px 0px 1px;
+  
+        background-size: cover;
+        }
+    }
+    
+    @media screen and(max-width:1106px) {
+  .news_page_box{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+    }
+    @media screen and(max-width:1110px) {
+        .news_main{
+            width: 100%;
+        }
+        .news_aside{
+            width: 30%;
+            display: none;
+        }
+          }
+          @media screen and(max-width:500px) {
+          
+              .content_bottom1{
+               display: none;
+                }
+                .content_bottom2 ,.content_bottom3 {
+                  
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    gap: 10px;
+                  
+                    }
+              }
+// tap style and
+
