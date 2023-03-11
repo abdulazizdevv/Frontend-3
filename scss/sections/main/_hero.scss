@@ -1,0 +1,118 @@
+.hero-title {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--texts);
+  max-width: 695px;
+  line-height: 58px;
+}
+.hero-desc {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--texts);
+  max-width: 549px;
+  padding-top: 40px;
+}
+
+#hero {
+  background-image: url(../../../images/kvadrat.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: var(--hero);
+}
+
+.hero-bg {
+  background-image: url(../../../images/hero-bg1.png);
+  position: absolute;
+  width: 514.82px;
+  height: 657.4px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+
+.hero-section {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+}
+
+.earth {
+  padding-top: 138px;
+}
+
+.dn{
+  z-index: -1;
+}
+
+.btn2 {
+  border: none;
+  padding: 20px 66px;
+  font-size: 18px;
+  position: relative;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  top: 100px !important ;
+  &::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  //rounded btn styles
+  &.rounded {
+  margin-top: 100px !important  ;
+
+    border-radius: 50px;
+    & .text-white {
+      color: #fff;
+      mix-blend-mode: hard-light;
+    }
+
+    &::before {
+      border-radius: 50px;
+      width: 25%;
+      background: #6911ad;
+    }
+    &:hover {
+      & .text-white {
+        color: #fff;
+        font-family: "Proxima Nova", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px !important;
+      }
+      &::before {
+        background: #6911ad;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+.hero-section{
+flex-direction: column-reverse;
+padding-bottom: 150px;
+}
+.earth {
+    padding-top: 30px !important;
+  }
+  .btn2{
+    top: 50px !important;
+  }
+  
+}

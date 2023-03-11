@@ -9,20 +9,91 @@
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 
 <body>
-    <header>
+    <!-- Header Start -->
+    <header class="header">
         <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <button class="header__logo-burger"></button>
+                    <a class="logo" href="./index.html" title="Site Logo">Logo</a>
+                </div>
+                <div class="header__navbar">
+                    <nav class="header__nav">
+                        <div class="header__nav-close">
+                            <a class="mobile-logo" href="./index.html">LOGO</a>
+                            <button class="header__close"></button>
+                        </div>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link" title="О компании">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link" title="Портфолио">
+                                    Портфолио
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link" title="Услуги">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link" title="Контакты">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="mobile-tel" href="tel:(99) 999 9999" title="Phone number">(99) 999 9999</a>
+                    </nav>
+                    <div class="header__contact">
+                        <div class="dark">
+                            <input type="checkbox" id="toggle">
 
+                            <label class="toggle" for="toggle">
+                                <i class="bx bxs-sun"></i>
+                                <i class="bx bx-moon"></i>
+                                <span class="ball"></span>
+                            </label>
+                        </div>
+                        <div class="contacts">
+                            <a class="tel" title="Phone number" href="tel:+998 90 777-77-77">+998 90 777-77-77</a>
+                            <a class="email" title="Email" href="mailto:chotatam@gmail.com">chotatam@gmail.com</a>
+                        </div>
+                        <button class="orderBtn">Заказать звонок</button>
+                    </div>
+                </div>
+                <button class="dark-light">
+                    <img class="moon" src="./images/moon.png" alt="moon" />
+                </button>
+            </div>
         </div>
     </header>
+    <!-- Header End -->
 
     <main>
         <section id="hero">
-            <div class="container ">
-
+            <div class="hero-content"></div>
+            <div class="container hero-section">
+                <div>
+                    <h2 class="hero-title">Biz veb-saytlar, ilovalarni
+                        ishlab chiqamiz</h2>
+                    <p class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <a href="./portfolio.html" class="btn2 rounded">
+                        <span class="text-white">Портфолио </span>
+                    </a>
+                </div>
+                <div class="earth">
+                    <canvas id="cobe" style="width: 500px; height: 500px; z-index: 999 !important;" width="1500"
+                        height="1500"></canvas>
+                </div>
             </div>
         </section>
         <section id="about">
@@ -66,6 +137,38 @@
     </main>
     <footer>
         <div class="container">
+            <div class="footer">
+                <a class="flogo" href="./index.html">LOGO</a>
+                <div class="location">
+                    <a href="#"><img src="./images/location.png" alt="location"></a>
+                    <a class="text" href="#">Manzil: Toshkent shahri, Sergeli tumani, Navro’z ko’cha 3-uy.Mo’ljal: “ASIA AUTO” avtosalon ichki qismi</a>
+                </div>
+                <div class="phones">
+                    <div class="phone">
+                        <a href="tel:+998 99 999 99 99"><img src="./images/ohone.png" alt="phone"></a>
+                    <a class="tel" href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+998 99 999 99 99"><img src="./images/ohone.png" alt="phone"></a>
+                    <a class="tel" href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="icon facebook">
+                        <div class="tooltip"> Telegram </div>
+                        <a href="#"><img src="./images/telegram.png" alt="facebook" /></a>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip"> Facebook </div>
+                        <a href="#"><img src="./images/facebook.png" alt="facebook" /></a>
+
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip"> Instagram </div>
+                        <a href="#"><img src="./images/instagram.png" alt="twitter" /></a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </footer>
@@ -74,6 +177,39 @@
     <script src="./slick-1.8.1/slick/slick.js"></script>
 
     <script src="./js/main.js"></script>
+    <script type="module">
+        import createGlobe from 'https://cdn.skypack.dev/cobe'
+      
+        let phi = 0
+        let canvas = document.getElementById("cobe")
+      
+        const globe = createGlobe(canvas, {
+          devicePixelRatio: 2,
+          width: 1000,
+          height: 1000,
+          phi: 0,
+          theta: 0,
+          dark:0.3,
+          diffuse: 1.2,
+          scale: 1,
+          mapSamples: 16000,
+          mapBrightness: 6,
+          baseColor: [1, 1, 1],
+          markerColor: [1, 0.5, 1],
+          glowColor: [1, 1, 1],
+          offset: [0, 0],
+          markers: [
+            { location: [37.7595, -122.4367], size: 0.03 },
+            { location: [40.7128, -74.006], size: 0.1 },
+          ],
+          onRender: (state) => {
+            // Called on every animation frame.
+            // `state` will be an empty object, return updated params.
+            state.phi = phi
+            phi += 0.01
+          },
+        })
+      </script>
 </body>
 
 </html>
