@@ -1,0 +1,14 @@
+:root {
+  --main: #fff;
+  --header-color: rgba(23, 25, 29, 0.1);
+  --texts: #000000;
+  --card-color: rgba(255, 255, 255, 0.9);
+  --card-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+}
+.dark {
+  --main: #000;
+  --header-color: rgba(23, 25, 29, 0.7);
+  --texts: #fff;
+  --card-color: rgba(14, 16, 20, 0.9);
+  --card-shadow: 5px 4px 14px rgba(255, 255, 255, 0.55);
+}

@@ -1,0 +1,95 @@
+#about {
+  background-image: url(../../../images/gradientShoose.png) ;
+//   margin-top: 94px;
+background-size: cover;
+// background-position-y: center;
+  padding-top: 94px;
+  padding-bottom: 25px;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 131px;
+  &-head {
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+    color: #000000;
+  }
+  &-txt {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 569px;
+    margin-top: 20px;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-flex {
+      display: flex;
+      gap: 184px;
+      //   flex-wrap: wrap;
+    }
+
+    &-place {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    &-gradient {
+      font-family: "Proxima Nova", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 100%;
+      background: linear-gradient(
+        109.09deg,
+        rgba(0, 40, 248, 0.89) 0%,
+        #6911ad 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    &-txt {
+      font-family: "Proxima Nova", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all-right-flex {
+    display: flex;
+    gap: 30px;
+  }
+  .all-right-flex {
+    display: flex;
+    gap: 94px;
+  }
+}
+@media screen and (max-width: 1300px) {
+ .all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+}

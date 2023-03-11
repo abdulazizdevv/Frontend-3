@@ -1,6 +1,22 @@
 @import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold?styles=20880");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+:root {
+  --main: #fff;
+  --header-color: rgba(23, 25, 29, 0.1);
+  --texts: #000000;
+  --card-color: rgba(255, 255, 255, 0.9);
+  --card-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+}
+
+.dark {
+  --main: #000;
+  --header-color: rgba(23, 25, 29, 0.7);
+  --texts: #fff;
+  --card-color: rgba(14, 16, 20, 0.9);
+  --card-shadow: 5px 4px 14px rgba(255, 255, 255, 0.55);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,5 +42,1469 @@ p {
   font-family: 'Gilroy-Regular', sans-serif;
   font-weight: 400;
   font-size: 72px;
+}
+
+#about {
+  background-image: url(../../../images/gradientShoose.png);
+  background-size: cover;
+  padding-top: 94px;
+  padding-bottom: 25px;
+}
+
+.all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 131px;
+}
+
+.all-head {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.all-txt {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 569px;
+  margin-top: 20px;
+}
+
+.all-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.all-right-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 184px;
+}
+
+.all-right-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all-right-gradient {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911ad 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.all-right-txt {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .all-right-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .all-right-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 94px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#benefitCard {
+  background-image: url("../../../images/left-gradient.png"), url("../../../images/right-gragient.png"), url("../../../images/main-line.jpg");
+  background-size: cover;
+  padding-bottom: 25px;
+}
+
+.head-text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  padding-top: 70px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+
+.benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 433px;
+  height: 250px;
+  background: rgba(243, 243, 243, 0.5);
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  border-radius: 20px;
+  position: relative;
+}
+
+.card:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+          box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.card-img {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.card-line {
+  width: 50px;
+  height: 3px;
+  background: #686464;
+  border-radius: 20px;
+  position: absolute;
+  left: 25px;
+  top: 165px;
+}
+
+.card-head {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  position: absolute;
+  left: 25px;
+  top: 125px;
+}
+
+.card-txt {
+  position: absolute;
+  left: 25px;
+  bottom: 24px;
+  max-width: 385px;
+  height: 44px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 138% */
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .benefit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    margin-top: 15px;
+  }
+}
+
+#ourProject {
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+
+.project-txt {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.taps {
+  width: 664px;
+  height: 55px;
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 90px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.tap {
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  width: 166px;
+  border: none;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+.tap1 {
+  margin-top: 1px;
+  width: 166px;
+  height: 51px;
+  text-align: center;
+  background: linear-gradient(93.5deg, #1e11ad 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.project {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 433px;
+  height: 362px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.project-card-top {
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.project .card1 {
+  background-image: url(../../../images/project1.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card1-hover {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card1-hover .project-card-top {
+  display: none;
+}
+
+.project .card1-hover::after {
+  position: absolute;
+  content: "UYMAKON mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card1:hover {
+  overflow: visible;
+}
+
+.project .card1:hover .card1-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card2 {
+  background: url(../../../images/project2.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card2-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card2-hover .project-card-top {
+  display: none;
+}
+
+.project .card2-hover::after {
+  position: absolute;
+  content: "FOOD veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card2:hover {
+  overflow: visible;
+}
+
+.project .card2:hover .card2-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card3 {
+  background: url(../../../images/project3.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card3-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card3-hover .project-card-top {
+  display: none;
+}
+
+.project .card3-hover::after {
+  position: absolute;
+  content: "Social Media Marketing";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card3:hover {
+  overflow: visible;
+}
+
+.project .card3:hover .card3-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card4 {
+  background: url(../../../images/project4.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card4-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card4-hover .project-card-top {
+  display: none;
+}
+
+.project .card4-hover::after {
+  position: absolute;
+  content: "YANGILIKLAR mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card4:hover {
+  overflow: visible;
+}
+
+.project .card4:hover .card4-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card5 {
+  background: url(../../../images/project5.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card5-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card5-hover .project-card-top {
+  display: none;
+}
+
+.project .card5-hover::after {
+  position: absolute;
+  content: "KUN UZ veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card5:hover {
+  overflow: visible;
+}
+
+.project .card5:hover .card5-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card6 {
+  background: url(../../../images/project6.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card6-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card6-hover .project-card-top {
+  display: none;
+}
+
+.project .card6-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card6:hover {
+  overflow: visible;
+}
+
+.project .card6:hover .card6-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.links {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.links a {
+  color: #6911ad;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .taps {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: c;
+        -ms-flex-pack: c;
+            justify-content: c;
+  }
+}
+
+#service {
+  background-image: url(../../../images/main-line.jpg);
+  padding-top: 120px;
+}
+
+.service {
+  width: 100%;
+  max-width: 1358px;
+  min-height: 788px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 20px;
+}
+
+.service-head {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.service .all-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 109px;
+}
+
+.service .bottom {
+  margin-top: 50px;
+}
+
+.service .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 88px;
+}
+
+.service .icons-bg1 {
+  width: 69px;
+  height: 69px;
+  background: rgba(84, 84, 212, 0.1);
+  border-radius: 50%;
+}
+
+.service .icons-bg1 img {
+  padding: 18px;
+}
+
+.service .icons-bg2 {
+  width: 69px;
+  height: 69px;
+  background: rgba(240, 64, 55, 0.1);
+  border-radius: 50%;
+}
+
+.service .icons-bg2 img {
+  padding: 18px;
+}
+
+.service .icons-bg3 {
+  width: 69px;
+  height: 69px;
+  background: rgba(254, 220, 90, 0.1);
+  border-radius: 50%;
+}
+
+.service .icons-bg3 img {
+  padding: 18px;
+}
+
+.service .head-txt {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.750316px;
+  color: #000000;
+}
+
+.service .head-p {
+  max-width: 299px;
+  height: 56px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.500211px;
+  color: rgba(39, 39, 39, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+  .all-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .all-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#ourProject {
+  background-image: url(../../../images/main-line.jpg);
+  padding-top: 120px;
+  padding-bottom: 25px;
+}
+
+.project-txt {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.taps {
+  width: 664px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #999999;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 90px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.tap {
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  width: 166px;
+  border: none;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+.tap1 {
+  margin-top: 1px;
+  width: 166px;
+  height: 51px;
+  text-align: center;
+  background: linear-gradient(93.5deg, #1e11ad 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.project {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 410px;
+  height: 362px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.project-card-top {
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.project .card1 {
+  background-image: url(../../../images/project1.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card1-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card1-hover .project-card-top {
+  display: none;
+}
+
+.project .card1-hover::after {
+  position: absolute;
+  content: "UYMAKON mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card1:hover {
+  overflow: visible;
+}
+
+.project .card1:hover .card1-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card2 {
+  background: url(../../../images/project2.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card2-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card2-hover .project-card-top {
+  display: none;
+}
+
+.project .card2-hover::after {
+  position: absolute;
+  content: "FOOD veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card2:hover {
+  overflow: visible;
+}
+
+.project .card2:hover .card2-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card3 {
+  background: url(../../../images/project3.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card3-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card3-hover .project-card-top {
+  display: none;
+}
+
+.project .card3-hover::after {
+  position: absolute;
+  content: "Social Media Marketing";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card3:hover {
+  overflow: visible;
+}
+
+.project .card3:hover .card3-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 332px;
+}
+
+.project .card4 {
+  background: url(../../../images/project4.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card4-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card4-hover .project-card-top {
+  display: none;
+}
+
+.project .card4-hover::after {
+  position: absolute;
+  content: "YANGILIKLAR mobil ilovasi";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card4:hover {
+  overflow: visible;
+}
+
+.project .card4:hover .card4-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card5 {
+  background: url(../../../images/project5.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card5-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card5-hover .project-card-top {
+  display: none;
+}
+
+.project .card5-hover::after {
+  position: absolute;
+  content: "KUN UZ veb sayt";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card5:hover {
+  overflow: visible;
+}
+
+.project .card5:hover .card5-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card6 {
+  background: url(../../../images/project6.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card6-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card6-hover .project-card-top {
+  display: none;
+}
+
+.project .card6-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card6:hover {
+  overflow: visible;
+}
+
+.project .card6:hover .card6-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card7 {
+  background: url(../../../images/project2.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card7-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card7-hover .project-card-top {
+  display: none;
+}
+
+.project .card7-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card7:hover {
+  overflow: visible;
+}
+
+.project .card7:hover .card7-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card8 {
+  background: url(../../../images/project5.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card8-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card8-hover .project-card-top {
+  display: none;
+}
+
+.project .card8-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card8:hover {
+  overflow: visible;
+}
+
+.project .card8:hover .card8-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card9 {
+  background: url(../../../images/project3.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card9-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card9-hover .project-card-top {
+  display: none;
+}
+
+.project .card9-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card9:hover {
+  overflow: visible;
+}
+
+.project .card9:hover .card9-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card10 {
+  background: url(../../../images/project1.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card10-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card10-hover .project-card-top {
+  display: none;
+}
+
+.project .card10-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card10:hover {
+  overflow: visible;
+}
+
+.project .card10:hover .card6-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card10 {
+  background: url(../../../images/project6.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card10-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card10-hover .project-card-top {
+  display: none;
+}
+
+.project .card10-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card10:hover {
+  overflow: visible;
+}
+
+.project .card10:hover .card10-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card11 {
+  background: url(../../../images/project6.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card11-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card11-hover .project-card-top {
+  display: none;
+}
+
+.project .card11-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card11:hover {
+  overflow: visible;
+}
+
+.project .card11:hover .card11-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project .card12 {
+  background: url(../../../images/project4.png);
+  overflow: hidden;
+  position: relative;
+}
+
+.project .card12-hover {
+  position: absolute;
+  left: 15px;
+  max-width: 403px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+}
+
+.project .card12-hover .project-card-top {
+  display: none;
+}
+
+.project .card12-hover::after {
+  position: absolute;
+  content: "Social Media Marketing ";
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+}
+
+.project .card12:hover {
+  overflow: visible;
+}
+
+.project .card12:hover .card12-hover {
+  background-image: url(../../../images/top-vector.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  bottom: 15px;
+  height: 332px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.links {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.links a {
+  color: #6911ad;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .taps {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
